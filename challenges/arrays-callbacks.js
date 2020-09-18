@@ -77,15 +77,10 @@ function consume (a, b, cb) {
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
-function add (a, b) {
-  return a+b;
-}
-function multiply (a,b) {
-  return a*b;
-}
-function greeting (firstName, lastName) {
-  return `Hello ${firstName} ${lastName}, nice to meet you!`
-}
+
+add = (a,b) => a+b;
+multiply = (a,b) => a*b;
+greeting = (firstName, lastName) => `Hello ${firstName} ${lastName}, nice to meet you!`
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 console.log(consume(2, 2, add)); // 4
@@ -100,4 +95,3 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
 */
-
